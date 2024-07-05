@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:thistle;
+  }
+  
+  .chessboard {
+    display: inline-block;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .square {
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  .row:nth-child(odd) .square:nth-child(even),
+  .row:nth-child(even) .square:nth-child(odd) {
+    background-color: black;
+  }
+  
+  .row:nth-child(odd) .square:nth-child(odd),
+  .row:nth-child(even) .square:nth-child(even) {
+    background-color: white; 
+  }
+  
